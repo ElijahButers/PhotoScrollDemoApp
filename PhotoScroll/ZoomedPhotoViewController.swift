@@ -23,6 +23,13 @@
 import UIKit
 
 class ZoomedPhotoViewController: UIViewController {
+  
+  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet weak var imageViewBottomConstraint: NSLayoutConstraint!
+  @IBOutlet weak var imageViewLeadingConstraint: NSLayoutConstraint!
+  @IBOutlet weak var imageViewTopConstraint: NSLayoutConstraint!
+  @IBOutlet weak var imageViewTrailingConstraint: NSLayoutConstraint!
+  
   @IBOutlet weak var imageView: UIImageView!
   var photoName: String!
   
@@ -31,5 +38,17 @@ class ZoomedPhotoViewController: UIViewController {
   }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 

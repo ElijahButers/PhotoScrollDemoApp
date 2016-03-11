@@ -94,6 +94,11 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="imageView" destination="Ve5-7J-0me" id="iCm-X3-KJI"/>
+                        <outlet property="imageViewBottomConstraint" destination="u9B-hd-aew" id="NMR-tC-OTu"/>
+                        <outlet property="imageViewLeadingConstraint" destination="Ja4-21-HiO" id="qCp-Aq-dzL"/>
+                        <outlet property="imageViewTopConstraint" destination="yA3-7d-lh5" id="Xpn-Za-tOG"/>
+                        <outlet property="imageViewTrailingConstraint" destination="V0M-gU-k3K" id="B4X-Si-zb6"/>
+                        <outlet property="scrollView" destination="6D6-de-LbJ" id="3pH-5X-4jr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSI-tT-12r" userLabel="First Responder" sceneMemberID="firstResponder"/>
