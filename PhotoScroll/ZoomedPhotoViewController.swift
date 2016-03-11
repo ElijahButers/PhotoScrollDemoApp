@@ -39,7 +39,11 @@ class ZoomedPhotoViewController: UIViewController {
   
 }
 
-
+extension ZoomedPhotoViewController: UIScrollViewDelegate {
+  func viewForZoomingInScrollView(scrolView: UIScrollView) -> UIView? {
+    return imageView
+  }
+}
 
 
 
