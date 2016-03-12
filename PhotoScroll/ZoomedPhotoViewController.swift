@@ -35,6 +35,18 @@ class ZoomedPhotoViewController: UIViewController {
   
   override func viewDidLoad() {
     imageView.image = UIImage(named: photoName)
+    
+    updateMinZoomScaleForSize(view.bounds.size)
+  }
+  
+  private func updateMinZoomScaleForSize(size: CGSize) {
+    
+    let widthScale = size.width / imageView.bounds.width
+    let heightScale = size.width / imageView.bounds.height
+    let minScale = min(widthScale, heightScale)
+    
+    scrollView.minimumZoomScale = minScale
+    scrollView.zoomScale = minScale
   }
   
 }
