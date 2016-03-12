@@ -71,12 +71,16 @@ class ZoomedPhotoViewController: UIViewController {
 
 
 extension ZoomedPhotoViewController: UIScrollViewDelegate {
+  
   func viewForZoomingInScrollView(scrolView: UIScrollView) -> UIView? {
     return imageView
   }
+  
+  func scrollViewDidZoom(scrollView: UIScrollView) {
+    updateConstraintsForSize(view.bounds.size)
 }
 
-
+}
 
 
 
